@@ -1,552 +1,400 @@
 <!DOCTYPE html>
-<html>
-<title>Resume - Parth Kshirsagar</title>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/x-icon" href="assets/PFP/Parth PFP natrure.png">
-<link href="style.css" rel="stylesheet" />
-<style>
-body {
-  background: var(--bg-main);
-  color: var(--text-main);
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navata Design Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="navata-style.css">
+</head>
+<body>
 
-.w3-text-grey {
-  color: var(--text-muted) !important;
-}
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#home" class="logo"><span>Navata</span> <span>Design</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="tel:+918378932740" class="btn-call">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.1a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.91-.95a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-mark {
-  background: transparent;
-  color: var(--accent);
-  font-weight: 600;
-}
-body, h1,h2,h3,h4,h5 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 110px;}
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+918378932740" class="btn-call" style="width:fit-content;">📞 Call Now</a>
+</div>
 
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const tabs = document.querySelectorAll(".tab-btn");
-      const contents = document.querySelectorAll(".tab-content");
-    
-      function stopVideos() {
-        document.querySelectorAll("video").forEach(v => {
-          v.pause();
-          v.currentTime = 0;
-        });
-      }
-    
-      tabs.forEach(tab => {
-        tab.addEventListener("click", () => {
-          stopVideos();
-    
-          tabs.forEach(t => t.classList.remove("active"));
-          contents.forEach(c => c.classList.remove("active"));
-    
-          tab.classList.add("active");
-          document.getElementById(tab.dataset.tab).classList.add("active");
-        });
-      });
-    });
-    </script>
-    
-
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="custom-sidebar w3-hide-small">
-    <div class="sidebar-avatar">
-      <img src="assets/PFP/Parth PFP psych.png" alt="Parth">
+<!-- HERO -->
+<section id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Transform Your<br>Space Into a<br><span class="accent">Work of Art</span></h1>
+    <p>Premium interior design solutions with luxe finishes and on-time delivery. We create spaces that reflect your personality and elevate your lifestyle.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Get Free Consultation <span class="arrow">→</span></a>
+      <a href="https://wa.me/918378932740?text=Hi%2C%20I%27m%20interested%20in%20interior%20design%20services" target="_blank" class="btn-outline">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us
+      </a>
     </div>
-  
-    <a href="#home" class="nav-item active">
-      <i class="fa fa-home"></i>
-      <span>Home</span>
-    </a>
-  
-    <a href="#about" class="nav-item">
-      <i class="fa fa-user"></i>
-      <span>About</span>
-    </a>
-  
-    <a href="#projects" class="nav-item">
-      <i class="fa fa-briefcase"></i>
-      <span>Projects</span>
-    </a>
-  
-    <a href="#contact" class="nav-item">
-      <i class="fa fa-envelope"></i>
-      <span>Contact</span>
-    </a>
-  
-    <a href="banners.html" class="nav-item">
-      <i class="fa fa-paint-brush"></i>
-      <span>Designs</span>
-    </a>
-  </nav>
-  
+    <div class="hero-stats">
+      <div><div class="stat-num">50+</div><div class="stat-label">Projects</div></div>
+      <div><div class="stat-num">40+</div><div class="stat-label">Happy Clients</div></div>
+      <div><div class="stat-num">5+</div><div class="stat-label">Years</div></div>
+      <div><div class="stat-num">100%</div><div class="stat-label">On-Time</div></div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <svg viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="14" rx="4"/><line x1="12" y1="17" x2="12" y2="21"/><circle cx="12" cy="7" r="1" fill="white" stroke="none"/></svg>
+  </div>
+</section>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar w3-card-4">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">PARTH</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
-    <a href="banners.html" class="w3-bar-item w3-button" style="width:20% !important">DESIGNS</a>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <span class="section-label">About Us</span>
+    <h2 class="section-title">Crafting Dream Spaces Since 2019</h2>
+    <p class="section-desc">Navata Design Studio is a passionate team of interior designers dedicated to transforming houses into homes. We blend contemporary aesthetics with timeless elegance to create spaces that inspire and delight.</p>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 3.87-3.13 7-7 7S5 12.87 5 9a7 7 0 017-7zm0 16v4m-4 0h8"/></svg>
+        </div>
+        <h3>Creative Excellence</h3>
+        <p>Innovative designs that push boundaries while maintaining functionality</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h3>Quality Craftsmanship</h3>
+        <p>Premium materials and meticulous attention to every detail</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Client-Centric</h3>
+        <p>Your vision and satisfaction are at the heart of everything we do</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3>Timely Execution</h3>
+        <p>Committed to delivering projects on schedule without compromise</p>
+      </div>
+    </div>
+    <div class="story-box">
+      <h3>Our Story</h3>
+      <p>Founded with a vision to make premium interior design accessible to everyone, Navata Design Studio has grown into a trusted name in Pune's interior design landscape.</p>
+      <p>We believe that great design should be a perfect marriage of form and function. Every project we undertake is a unique journey where we collaborate closely with our clients to understand their lifestyle, preferences, and aspirations.</p>
+      <p>From concept to completion, our experienced team ensures a seamless experience, delivering spaces that not only look stunning but also enhance the way you live.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <span class="section-label">Our Services</span>
+    <h2 class="section-title">Comprehensive Design Solutions</h2>
+    <p class="section-desc">From initial concept to final installation, we offer end-to-end interior design services tailored to your needs and budget.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Custom Design</h3>
+        <p>Tailored interior solutions that reflect your unique style and functional needs</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6L12 2z"/></svg></div>
+        <h3>Luxe Finish</h3>
+        <p>Premium quality materials and impeccable craftsmanship for a sophisticated look</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>On-Time Delivery</h3>
+        <p>Committed to delivering your dream space within the promised timeline</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></div>
+        <h3>Modular Kitchens</h3>
+        <p>Functional and stylish kitchen designs optimized for modern living</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 00-2-2H4a2 2 0 00-2 2v10c0 1.1.9 2 2 2h3M14 12H2m8 4v4m4-4v4m-6 0h8"/></svg></div>
+        <h3>Living Rooms</h3>
+        <p>Create warm, inviting spaces perfect for family gatherings and entertainment</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/><rect x="2" y="8" width="20" height="8" rx="2"/></svg></div>
+        <h3>Bedrooms</h3>
+        <p>Serene bedroom designs that combine comfort with aesthetic appeal</p>
+      </div>
+    </div>
+    <div class="cta-box">
+      <h3>Ready to Start Your Project?</h3>
+      <p>Let's discuss your vision and create a space that perfectly reflects your style and needs.</p>
+      <a href="#contact" class="btn-white">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+        Schedule Consultation
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <span class="section-label">Portfolio</span>
+    <h2 class="section-title">Our Recent Projects</h2>
+    <p class="section-desc">Explore our curated collection of beautifully designed spaces that showcase our expertise and commitment to excellence.</p>
+    <div class="portfolio-grid">
+      <div class="portfolio-card" onclick="openModal(0)">
+        <div class="portfolio-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="2 BHK Chinchwad">
+          <div class="portfolio-overlay"><span class="overlay-badge">Living Room</span></div>
+        </div>
+        <div class="portfolio-info"><h3>2 BHK – Chinchwad</h3><span class="cat">Living Room • 2025</span></div>
+      </div>
+      <div class="portfolio-card" onclick="openModal(1)">
+        <div class="portfolio-img-wrap">
+          <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800&q=80" alt="2 BHK Nanded City">
+          <div class="portfolio-overlay"><span class="overlay-badge">Kitchen</span></div>
+        </div>
+        <div class="portfolio-info"><h3>2 BHK – Nanded City</h3><span class="cat">Kitchen • 2020</span></div>
+      </div>
+      <div class="portfolio-card" onclick="openModal(2)">
+        <div class="portfolio-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80" alt="3 BHK Sun City Road">
+          <div class="portfolio-overlay"><span class="overlay-badge">Living Room</span></div>
+        </div>
+        <div class="portfolio-info"><h3>3 BHK – Sun City Road</h3><span class="cat">Living Room • 2022</span></div>
+      </div>
+      <div class="portfolio-card" onclick="openModal(3)">
+        <div class="portfolio-img-wrap">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Study Room Design">
+          <div class="portfolio-overlay"><span class="overlay-badge">Study Room</span></div>
+        </div>
+        <div class="portfolio-info"><h3>Study Room Design</h3><span class="cat">Study Room • 2023</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-backdrop" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <img class="modal-img" id="modal-img" src="" alt="">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-body">
+      <div class="modal-meta">
+        <span class="modal-badge" id="modal-cat"></span>
+        <span class="modal-year" id="modal-year"></span>
+      </div>
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+    </div>
   </div>
 </div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"><h6 class="w3-monospace w3-jumbo">I'm</h6></span><strong>Parth</strong> kshirsagar</h1>
-    <p>Freelance: Graphic Designer, Web-Developer & Video Editor</p>
-    <img src="assets/PFP/Parth PFP psych.png" alt="parth kshirsagar" class="w3-image w3-round-xlarge hero-image">
-    <br>
-    <br>
-    <a href="banners.html">
-        <img src="Checkout banner.png" alt="parth kshirsagar" class="w3-image w3-round-xlarge hero-image secondary"></a>      
-  </header>
-
-
- <!--ABOUT ME-->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <div class="about-structure">
-
-        <div class="about-block">
-          <h4>Intro</h4>
-          <p>
-            Yo! it's Parth Kshirsagar. Student MIT-WPU - TYBCA
-            I love making videos & creating mindbending designs, and I also develop websites to make money.
-          </p>
-        </div>
-      
-        <div class="about-block">
-          <h4>Current + Past in a Nutshell</h4>
-          <ul>
-            <li>Editor + Manager for NFS youtube channel (190k+ subs)</li>
-            <li>Worked as a social media manager for sports management company</li>
-            <li>Guided and guiding businesses with social media game, which Includes (SEO, editing, designing and ads)</li>
-            <li>Stock Market Nerd</li>
-          </ul>
-        </div>
-      
-        <div class="about-block">
-          <h4>PEAK NERD</h4>
-          <p>
-            Python: Cyber security tools (pen testing, keylogger, pyflodder aka DDOS,)<br>
-            Management/ College level (Database management systems - pharmacy, hotel, etc)<br>
-            Web development: <br>
-            Made more than 20 Websites for clients from india, Dubai, USA.
-            (E-commerce, Business, Portfolio)
-          </p>
-        </div>
-        <div class="about-block subtle">
-            <p>
-              While you could click on the below links to check my work out!
-            </p>
-          </div>
-      
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <span class="section-label">Testimonials</span>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-desc">Don't just take our word for it. Here's what our satisfied clients have to say about their experience with Navata Design Studio.</p>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="quote-bg">99</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Navata Design Studio transformed our home beautifully! The attention to detail and quality of work exceeded our expectations. Highly recommended!"</p>
+        <hr class="testi-divider">
+        <div class="testi-name">Priya Sharma</div>
+        <div class="testi-location">Chinchwad, Pune</div>
+        <div class="testi-project">2 BHK Interior</div>
       </div>
-      
-      
-      <!--IMPORTANT LINKS-->
-      <div class="links-grid">
-
-        <a href="https://www.instagram.com/cricathon_official/" target="_blank" class="link-card">
-          <span class="tag video">2023-2024</span>
-          <span class="tag video">Past Experience</span>
-          <span class="link-title">Cricathon</span>
-          <span class="link-role">Worked as a Instagram Manager for 1 year</span>
-        </a>
-
-        <a href="https://www.youtube.com/@DubaiKatta_official" target="_blank" class="link-card">
-          <span class="tag video">2025 jan - 2026 jan</span>
-          <span class="tag video">Past Experience</span>
-          <span class="link-title">Dubai Katta</span>
-          <span class="link-role">Video Editor & Manager</span>
-        </a>
-
-        <a href="https://www.instagram.com/vcpl_official_/" target="_blank" class="link-card">
-          <span class="tag video">2025 jan - 2026 feb</span>
-          <span class="tag video">Past Experience</span>
-          <span class="link-title">VC-Gold</span>
-          <span class="link-role">End to End Social media marketing, Building brand presence and identity for future lead generation campaigns. Strategizing, Editing and Producing videos.</span>
-        </a>
-
-        <a href="https://www.instagram.com/crickfitnet_walhekarwadi/" target="_blank" class="link-card">
-          <span class="tag video">2026 jan - march</span>
-          <span class="link-title">Crickfit-net</span>
-          <span class="link-role">End to End Social media marketing, Building brand presence and identity. Strategizing, shooting and directing videos.</span>
-        </a>
-
-        <a href="https://www.youtube.com/@NeuralFrequencySounds" target="_blank" class="link-card">
-          <span class="tag video">2024 - Current</span>
-          <span class="link-title">Neural Frequency Sounds</span>
-          <span class="link-role">Video editor, SEO & manager. Managing the task flow with designers and audio engineers in agile method and creating highly visually attractive videos, Looking into pre production and post production - SEO.</span>
-        </a>
-
-        <a href="https://www.instagram.com/a.s.hospitality/" target="_blank" class="link-card">
-          <span class="tag video">2026 jun - current</span>
-          <span class="link-title">AS Hospitality</span>
-          <span class="link-role">End to End Social media marketing, Building brand presence and identity for future lead generation campaigns. Strategizing, shooting and directing videos.</span>
-        </a>
-
-      
+      <div class="testi-card">
+        <div class="quote-bg">99</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Professional team with creative ideas. They delivered our modular kitchen on time and within budget. Very satisfied with the luxe finish!"</p>
+        <hr class="testi-divider">
+        <div class="testi-name">Rajesh Kulkarni</div>
+        <div class="testi-location">Nanded City, Pune</div>
+        <div class="testi-project">Kitchen Renovation</div>
       </div>
-     <!--END OF IMP LINKS--> 
-    
-    <br>
-    <a class="info2">
-    <p>Validation for people who have trust issues: I'm a certified web-developer</p>
-
-    <p>Descriptive Portfolio Links below</p>
-    </a>
-    <!--CTA-->
-    <div class="cta-section">
-
-        <a href="https://youtu.be/yEseveNc5gA?si=9SljMBTIzJD9WZ-d" 
-           target="_blank" 
-           class="cta-btn primary">
-          ▶ Watch Showreel
-        </a>
-      
-        <a href="banners.html" 
-           class="cta-btn secondary">
-          View Design Work
-        </a>
-      
-      </div>
-    <!--END OF CTA-->  
-
-<!--END OF ABOUT ME-->
-
-<!--STATISTICAL SECTION-->
-
-    <h3 class="w3-padding-16 w3-text-light-grey">
-        Stats for <strong><mark>NERDS</mark></strong>
-      </h3>
-      
-      <div class="skill-grid">
-      
-        <div class="skill-card">
-        <span class="tag video">Tier: Core Skill</span>
-          <h4>Graphic Design</h4>
-          <p class="skill-level">Advanced</p>
-          <p class="skill-desc">
-            Brand creatives, thumbnails, ad visuals, banners, outdoor & social media assets.
-          </p>
-        </div>
-      
-        <div class="skill-card">
-        <span class="tag video">Tier: Core Skill</span>
-          <h4>Video Editing</h4>
-          <p class="skill-level">Advanced</p>
-          <p class="skill-desc">
-            Long-form YouTube, short-form reels, teasers, pacing, retention-focused edits, Youtube SEO & Optimization
-          </p>
-        </div>
-      
-        <div class="skill-card">
-          <h4>Web Development</h4>
-          <p class="skill-level">Intermediate+</p>
-          <p class="skill-desc">
-            Client websites, portfolios, landing pages, performance & SEO optimization.
-          </p>
-        </div>
-      
-        <div class="skill-card">
-          <h4>Python / Automation</h4>
-          <p class="skill-level">Practical</p>
-          <p class="skill-desc">
-            Automation scripts, parsers, network tools, data handling & experimentation.
-          </p>
-        </div>
-      
-      </div>
-      
- <!--CLIENT STASTISTICS-->
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span>20+</span>
-          <p>Clients</p>
-        </div>
-        <div class="stat-card">
-          <span>30+</span>
-          <p>Projects</p>
-        </div>
-        <div class="stat-card">
-          <span>∞</span>
-          <p>Iterations</p>
-        </div>
-      </div>    
-
-<!--END OF STATS SEC-->
-
-  
-  <!--PROJECTS-->
-  <div class="w3-padding-64 w3-content" id="projects">
-    <h2 class="w3-text-light-grey">
-      My <strong><mark>Projects</mark></strong>
-    </h2>
-    <p>Filter by category</p>
-    <hr style="width:200px" class="w3-opacity">
-  
-    <!-- TAB BUTTONS -->
-    <div class="project-tabs">
-      <button class="tab-btn active" data-tab="video">Video</button>
-      <button class="tab-btn" data-tab="web">Web</button>
-      <button class="tab-btn" data-tab="code">Code</button>
-    </div>
-  
-    <!-- VIDEO TAB -->
-    <div class="tab-content active" id="video">
-      <div class="project-grid">
-  
-        <!-- GARIBI -->
-        <div class="project-card">
-          <video controls preload="metadata" poster="assets/food reel cover.png">
-            <source src="assets/Food Market clip.mp4" type="video/mp4">
-          </video>
-          <div class="project-meta">
-            <span class="tag video">Brand Presence</span>
-            <h4>Short form content conversion</h4>
-            <p>Brand presence building and marketing. Video editing, Designing Reel cover, And multi platform SEO.</p>
-            <a href="https://www.instagram.com/reel/DVXwgEgDgKj/" target="_blank">Watch reel on instagram</a>
-          </div>
-        </div>
-  
-        <!-- PODCAST -->
-        <div class="project-card">
-          <video controls preload="metadata" poster="assets/pod10_th.png">
-            <source src="assets/podcast 10 edit.mp4" type="video/mp4">
-          </video>
-          <div class="project-meta">
-            <span class="tag video">Long-form</span>
-            <h4>Podcast Editing</h4>
-            <p>Multi-cam editing & pacing and starting hook creation</p>
-            <a href="https://youtu.be/0TU--hZ16lA?si=_C9NHmXHJ3qZTyWZ" target="_blank">Watch on Youtube</a>
-          </div>
-        </div>
-  
-        <!-- SHORT -->
-        <div class="project-card">
-          <video controls preload="metadata" poster=>
-            <source src="assets/Match cut reel-1.mp4" type="video/mp4">
-          </video>
-          <div class="project-meta">
-            <span class="tag video">Short-form Ad</span>
-            <h4>Premium Brand Ad - VCGold</h4>
-            <p>Brand identity seeding Advertisement - for Credibility</p>
-            <a href="https://www.instagram.com/reel/DTu4hDTDEyX/" target=_blank">Watch reel on instagram</a>
-          </div>
-        </div>
-  
+      <div class="testi-card">
+        <div class="quote-bg">99</div>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testi-text">"Excellent craftsmanship and modern design sense. Our living room is now the highlight of our home. Thank you Navata Design Studio!"</p>
+        <hr class="testi-divider">
+        <div class="testi-name">Sneha Deshmukh</div>
+        <div class="testi-location">Sun City Road, Pune</div>
+        <div class="testi-project">Living Room Design</div>
       </div>
     </div>
-  
-<!-- WEB TAB -->
-<div class="tab-content" id="web">
-    <div class="project-grid">
-  
-
-            <div class="project-card">
-        <a href="https://parthkexe.github.io/Navata-Design-Studio/" target="_blank">
-          <img src="assets/Navata Design Studio - Google Chrome 24-06-2026 12_21_06.png" alt="Makeup Artist">
-          <div class="project-meta">
-            <span class="tag web">Design Studio</span>
-            <h4>Navata Design Studio</h4>
-            <p>Lux interior Design Brand website</p>
-          </div>
-        </a>
-      </div>
-
-      <div class="project-card">
-        <a href="https://vishwarupachemicals.com/" target="_blank">
-          <img src="assets/vishwarupa chemicals.png" alt="Vishwarupa Chemicals">
-          <div class="project-meta">
-            <span class="tag web">Corporate</span>
-            <h4>Vishwarupa Chemicals</h4>
-            <p>Corporate website & optimization</p>
-          </div>
-        </a>
-      </div>
-  
-      <div class="project-card">
-        <a href="https://prasadpk13.github.io/Prasad/" target="_blank">
-          <img src="assets/Prasad K.png" alt="Prasad Portfolio">
-          <div class="project-meta">
-            <span class="tag web">Client</span>
-            <h4>Prasad K</h4>
-            <p>Professional portfolio website</p>
-          </div>
-        </a>
-      </div>
-  
+    <div class="testi-cta">
+      <p>Ready to join our list of happy clients?</p>
+      <a href="#contact" class="btn-primary" style="display:inline-flex;">Start Your Project Today</a>
     </div>
   </div>
-  
+</section>
 
-  
-  
-  
-    <!-- CODE TAB -->
-    <div class="tab-content" id="code">
-        <div class="project-grid">
-  
-      <!-- CODE PROJECT 1 -->
-       <div class="project-card code-card">
-        <img src="assets/code/nfs predictor 1.png" alt="CTR predictor" class="code-main-img">
-        
-        <div class="code-gallery">
-          <a href="assets/code/nfs predictor 1.png" target="_blank">
-            <img src="assets/code/nfs predictor 1.png"">
-          </a>
-          <a href= target="_blank">
-            <img src="assets/code/nfs predictor 2.jpg">
-          </a>
-          <a href=" target="_blank">
-            <img src="assets/code/nfs predictor 3.jpg">
-          </a>
-          <a href= target="_blank">
-            <img src="assets/code/nfs predictor 4.jpg">
-          </a>
-        </div>
-  
-        <div class="project-meta">
-          <span class="tag code">Python</span>
-          <h4>ML based YouTube Optimization System For NFS </h4>
-          <p>This analyzes and improves YouTube video performance before upload, based on real channel data of over 400+ videos.</p>
-          <a href="https://www.linkedin.com/posts/activity-7407073757804101634-SMCL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeI9KIB4YYdvrXghTGvlukBknwWrlIjLmE" target="_blank">View on linkedin</a>
-        </div>
-      </div>
-
-      <div class="project-card code-card">
-        <img src="assets/code/Stock predictor 1.png" alt="PyFlooder Preview" class="code-main-img">
-        
-        <div class="code-gallery">
-          <a href="assets/code/Stock predictor 1.png" target="_blank">
-            <img src="assets/code/Stock predictor 1.png">
-          </a>
-          <a href= target="_blank">
-            <img src="assets/code/Stock predictor 2.png">
-          </a>
-          <a href= target="_blank">
-            <img src=>
-          </a>
-          <a href= target="_blank">
-            <img src=>
-          </a>
-        </div>
-  
-        <div class="project-meta">
-          <span class="tag code">Python</span>
-          <h4>Stock Pattern Predictor</h4>
-          <p>using Computer Vision Concepts like ORB</p>
-          <a href="https://www.linkedin.com/posts/activity-7401888530928533505-xX3K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeI9KIB4YYdvrXghTGvlukBknwWrlIjLmE" target="_blank">View on Linkedin</a>
-        </div>
-      </div>
-
-      <div class="project-card code-card">
-        <img src="assets/code/swot tool 2.png" alt="PyFlooder Preview" class="code-main-img">
-        
-        <div class="code-gallery">
-          <a href="assets/code/swot tool 2.png" target="_blank">
-            <img src="assets/code/swot tool 2.png">
-          </a>
-          <a href= target="_blank">
-            <img src="assets/code/swot tool 1.png">
-          </a>
-          <a href= target="_blank">
-            <img src="assets/code/swot tool 3.png">
-          </a>
-          <a href= target="_blank">
-            <img src=>
-          </a>
-        </div>
-  
-        <div class="project-meta">
-          <span class="tag code">Python</span>
-          <h4>Python-based SWOT analysis tool</h4>
-          <p>using Yahoo Finance for fundamentals, VADER (NLTK) for news sentiment, and a rule-based engine to map data into clear Strengths, Weaknesses, Opportunities, and Threats.</p>
-          <a href="https://www.linkedin.com/posts/activity-7412386308049752064-_jrr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADeI9KIB4YYdvrXghTGvlukBknwWrlIjLmE" target="_blank">View on linkedin</a>
-        </div>
-      </div>
-
-    </div>
-</div>
-  
-</div>
-  
-<!--END OF PROJECTS-->
-
-  
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey"><b>It's free to ask me <mark>how much i charge</mark> Go On!</b></h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-        <div class="contact-block">
-
-            <div class="contact-item">
-              <i class="fa fa-map-marker"></i>
-              <span>Pune, Maharashtra</span>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <span class="section-label">Contact Us</span>
+    <h2 class="section-title">Let's Create Something Beautiful</h2>
+    <p class="section-desc">Ready to transform your space? Get in touch with us today for a free consultation.</p>
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2>Get In Touch</h2>
+        <p>Whether you're looking to redesign a single room or your entire home, we're here to help bring your vision to life. Reach out through any channel below.</p>
+        <div class="contact-cards">
+          <a href="tel:+918378932740" class="contact-card" style="text-decoration:none;">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.1a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.91-.95a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-          
-            <a href="tel:+919403564663" class="contact-item">
-              <i class="fa fa-phone"></i>
-              <span>+91 94035 64663</span>
-            </a>
-          
-            <a href="mailto:parthkshirsagar10@gmail.com" class="contact-item">
-              <i class="fa fa-envelope"></i>
-              <span>parthkshirsagar10@gmail.com</span>
-            </a>
-          
-        </div>          
-    </div><br>
-    <a class="info2"><p><strong>Interested in working together? <br>
-        <mark>Reach out to me when you’re prepared</strong></mark></p></a>
-
-    <form action="https://formspree.io/f/mzbwgrnd" method="POST" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-sand w3-round-large" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-sand w3-round-large" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-sand w3-round-large" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-sand w3-round-large" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-blue w3-round-xlarge" type="submit">
-          <i class="fa fa-paper-plane"></i>
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+            <div>
+              <div class="ccard-label">Phone</div>
+              <div class="ccard-value">+91 8378932740</div>
+              <div class="ccard-sub">Mon-Sat, 10 AM – 7 PM</div>
+            </div>
+          </a>
+          <a href="mailto:info@navatadesign.com" class="contact-card" style="text-decoration:none;">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">Email</div>
+              <div class="ccard-value">info@navatadesign.com</div>
+              <div class="ccard-sub">We'll respond within 24 hours</div>
+            </div>
+          </a>
+          <div class="contact-card">
+            <div class="ccard-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="ccard-label">Location</div>
+              <div class="ccard-value" style="color:#374151;">Pune, Maharashtra</div>
+              <div class="ccard-sub">Serving Pune and surrounding areas</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/918378932740?text=Hi%2C%20I%27m%20interested%20in%20interior%20design%20services" target="_blank" class="btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="Enter your name" required id="fname">
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="your@email.com" required id="femail">
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required id="fphone">
+          </div>
+          <div class="form-group">
+            <label>Your Message *</label>
+            <textarea placeholder="Tell us about your project..." required id="fmessage"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <a href="https://www.instagram.com/parthk.py/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/parthexe"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/parth-kshirsagar-256047220/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">Copyright <a href="#" target="_blank" class="w3-hover-text-green">2026</a></p>
-  <!-- End footer -->
-  </footer>
+</section>
 
-<!-- END PAGE CONTENT -->
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo"><span class="f1">Navata </span><span class="f2">Design</span></div>
+      <p class="footer-tagline">Creating bespoke, modern, and timeless interiors that transform your living spaces into works of art.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <span>Custom Design</span>
+      <span>Modular Kitchens</span>
+      <span>Living Rooms</span>
+      <span>Bedrooms</span>
+      <span>Luxe Finish</span>
+      <span>Consultation</span>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.1a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l.91-.95a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        <a href="tel:+918378932740" style="color:#9ca3af;text-decoration:none;">+91 8378932740</a>
+      </div>
+      <p style="font-size:0.78rem;margin-left:22px;margin-bottom:0.7rem;color:#6b7280;">Mon-Sat, 10 AM – 7 PM</p>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:info@navatadesign.com" style="color:#9ca3af;text-decoration:none;">info@navatadesign.com</a>
+      </div>
+      <div class="footer-contact-row">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span style="color:#67e8f9;">Pune, Maharashtra</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Navata Design Studio. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <div class="toast-title">✅ Message Sent!</div>
+  <div class="toast-msg">Thank you for reaching out. We'll get back to you within 24 hours.</div>
 </div>
 
+<script src="navata-script.js"></script>
 </body>
 </html>
